@@ -18,8 +18,8 @@ public class Calculator {
         if (Files.readAllLines(path).size() > 0){
         String result = Files.readAllLines(path).get(lines-1).replaceAll("apply", "");
         for (int i = 0; i < lines -1; i++) {
-            String linia = Files.readAllLines(path).get(i);
-            result += linia;
+            String line = Files.readAllLines(path).get(i);
+            result += line;
         }
 
         String finalString = convertToCharacter(result);
